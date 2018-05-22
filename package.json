@@ -1,0 +1,11 @@
+{
+  "name": "modelx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wataoka/modelx.git",
+  "author": "wataoka",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
