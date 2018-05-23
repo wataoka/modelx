@@ -13,6 +13,7 @@
 
         <!-- CSS -->
         <style type="text/css">
+
          .jumbotron {
              background:url("./assets/net.png");
              background-size: cover;
@@ -23,6 +24,11 @@
          .title {
              position: absolute;
          }
+
+         .round {
+             border-radius: 20px;
+         }
+
         </style>
 
     </head>
@@ -30,10 +36,9 @@
     <body>
 
         <header>
-            <!-- ナビゲーションバー -->
+            <!---------- ナビゲーションバー ---------->
             <nav class="navbar navbar-expand navbar-light" style="background-color: #1987e5">
                 <div class="container-fluid">
-                    <!-- ヘッダー部分 -->
                     <a class="navbar-brand" gref="#">
                         <img src="./assets/logo01.png" width="120">
                     </a>
@@ -49,14 +54,234 @@
             </nav>
         </header>
 
-        <!-- ジャンボトロン -->
+        <!---------- ジャンボトロン ---------->
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1><font color="#ffffff">世界No.1のモデルを知ろう。</font></h1>
+                <h1 class="text-light">世界No.1のモデルを知ろう。</h1>
             </div>
         </div>
 
 
-    </body>
+        <!---------- データ別ランキング ---------->
+        <h3 class="text-center pt-4 pb-2"><font color="#2699FB">データ別ランキング</font></h3>
 
-</html>
+        <div class="container-fluid row">
+
+            <div class="container col-md-3 border">
+                <div class="container">
+                    <h5 class="text-center font-weight-normal pt-3"><font color="2699FB">MNIST</font></h5>
+                    <h2 class="text-center"><font color="2699FB">99.51</font></h2>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <th scope="col">ランク</th>
+                        <th scope="col">モデル名</th>
+                        <th scope="col">acc</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">1</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">99.51</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">2</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">99.42</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">3</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">99.10</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">4</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">98.92</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">5</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">98.44</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contaienr col-md-1"></div>
+
+            <div class="container col-md-3 border">
+                <div class="container">
+                    <h5 class="text-center font-weight-normal text-primary pt-3"><font color="2699FB">CIFAR-10</font></h5>
+                    <h2 class="text-center text-primary"><font color="2699FB">95.96</font></h2>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <th scope="col">ランク</th>
+                        <th scope="col">モデル名</th>
+                        <th scope="col">acc</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">1</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">95.96</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">2</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">94.42</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">3</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">93.10</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">4</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">92.92</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">5</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">91.44</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="contaienr col-md-1"></div>
+            
+            <div class="container col-md-3 border">
+                <div class="container">
+                    <h5 class="text-center font-weight-normal text-primary pt-3"><font color="2699FB">CIFAR-100</font></h5>
+                    <h2 class="text-center text-primary"><font color="2699FB">90.42</font></h2>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <th scope="col">ランク</th>
+                        <th scope="col">モデル名</th>
+                        <th scope="col">acc</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">1</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">90.42</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">2</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">89.42</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">3</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">89.10</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">4</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">88.92</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="font-weight-normal">5</th>
+                            <th scope="row" class="font-weight-normal">watoka_xxx</th>
+                            <th scope="row" class="font-weight-normal">88.44</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <!---------- modelXについて---------->
+        <div class="container">
+            <h3 class="text-center pt-4 pb-2"><font color="#2699FB">modelXについて</font></h3>
+            <div class="container text-light row">
+                <div class="container col-md-3 bg-primary round">
+                    <div class="p-2 pb-3">
+                        <h5 class="text-center pt-3">最新モデルを知る</h5>
+                        <br>
+                        　modelxでは、最も成績の良いモデルの構造やソースコードを知ることができます。世界の賢者が作ったモデルを再活用し、より複雑なモデルを作成することもできるでしょう。
+                    </div>
+                </div>
+                <div class="container col-md-1"></div>
+
+                <div class="container col-md-3 bg-primary round">
+                    <div class="p-2 pb-5">
+                        <h5 class="text-center pt-3">参加する</h5>
+                        <br>
+                        　modelxでは、あなたが作ったモデルをランキングに挑戦させることもきます。月額100円の有料ユーザー登録を行えば、ソースを非公開にすることもできます。そのソースを閲覧したい方から一定金額を得ることもできます。ランキング上位に入れば、定期収入が得られるでしょう。
+                      
+                    </div>
+                </div>
+                <div class="container col-md-1"></div>
+
+                <div class="container col-md-3 bg-primary round">
+                    <div class="p-2 pb-3">
+                        <h5 class="text-center pt-3">データセットを作成する</h5>
+                        <br>
+                        　modelxでは、データセット登録を行うことができます。全世界でそのデータセットが公開され、世界の賢者が良い成績を収めてくれるでしょう。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+	      <footer class="container py-2">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a><img src="./assets/logo02.png" width="150"></a>
+                    <small class="d-block mb-3 text-muted">&copy; Wataoka Koki</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></l
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Business</a></li>
+                        <li><a class="text-muted" href="#">Education</a></li>
+                        <li><a class="text-muted" href="#">Government</a></li>
+                        <li><a class="text-muted" href="#">Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
